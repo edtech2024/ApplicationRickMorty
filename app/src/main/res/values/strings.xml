@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Application Rick Morty</string>
+    <string name="id">Id</string>
+    <string name="name">Name</string>
+    <string name="status">status</string>
+    <string name="species">species</string>
+    <string name="type">type</string>
+    <string name="gender">gender</string>
+    <string name="origin">origin</string>
+    <string name="image">image</string>
+    <string name="location">location</string>
+    <string name="episode">episode</string>
+    <string name="url">url</string>
+    <string name="created">created</string>
+    <string name="item_photo">Image description</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="input_etSearch">Введите запрос</string>
+</resources>
