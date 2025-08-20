@@ -5,10 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.example.applicationrickmorty.data.entity.ItemEntity
-import com.example.applicationrickmorty.domain.converter.EpisodeConverter
-import com.example.applicationrickmorty.domain.converter.LocationConverter
-import com.example.applicationrickmorty.domain.converter.OriginConverter
+import com.example.applicationrickmorty.data.entity.*
+import com.example.applicationrickmorty.data.converter.EpisodeConverter
+import com.example.applicationrickmorty.data.converter.LocationConverter
+import com.example.applicationrickmorty.data.converter.OriginConverter
 
 @Database(entities = [ItemEntity::class], version = 1)
 @TypeConverters(EpisodeConverter::class, OriginConverter::class, LocationConverter::class)

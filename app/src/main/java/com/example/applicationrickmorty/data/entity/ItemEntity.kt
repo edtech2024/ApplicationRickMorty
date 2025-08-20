@@ -1,12 +1,9 @@
 package com.example.applicationrickmorty.data.entity
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
-import androidx.room.TypeConverters
-import com.example.applicationrickmorty.domain.converter.EpisodeConverter
-import com.example.applicationrickmorty.domain.converter.LocationConverter
-import com.example.applicationrickmorty.domain.converter.OriginConverter
+import androidx.room.*
+import com.example.applicationrickmorty.data.converter.EpisodeConverter
+import com.example.applicationrickmorty.data.converter.LocationConverter
+import com.example.applicationrickmorty.data.converter.OriginConverter
 import com.example.applicationrickmorty.domain.model.Location
 import com.example.applicationrickmorty.domain.model.Origin
 
@@ -24,11 +21,11 @@ data class ItemEntity public constructor(
     var type: String,
     @ColumnInfo(name = "gender")
     var gender: String,
-    @ColumnInfo(name = "origin")
     @TypeConverters(OriginConverter::class)
+    @Embedded(prefix = "origin")
     var origin: Origin,
-    @ColumnInfo(name = "location")
     @TypeConverters(LocationConverter::class)
+    @Embedded(prefix = "location")
     var location: Location,
     @ColumnInfo(name = "image")
     var image: String,

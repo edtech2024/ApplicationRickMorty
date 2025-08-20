@@ -12,6 +12,8 @@ import com.example.applicationrickmorty.data.mapper.ItemToDTOMapper
 import com.example.applicationrickmorty.data.mapper.ItemToEntityMapper
 import com.example.applicationrickmorty.data.web.ItemApiInterface
 import com.example.applicationrickmorty.domain.irepository.IItemRepository
+import com.example.applicationrickmorty.domain.model.Location
+import com.example.applicationrickmorty.domain.model.Origin
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*

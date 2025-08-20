@@ -3,6 +3,8 @@ package com.example.applicationrickmorty.presentation.viewmodel
 import androidx.lifecycle.*
 import com.example.applicationrickmorty.domain.iusecase.*
 import com.example.applicationrickmorty.domain.model.ItemModel
+import com.example.applicationrickmorty.domain.model.Location
+import com.example.applicationrickmorty.domain.model.Origin
 import kotlinx.coroutines.*
 import javax.inject.Inject
 
